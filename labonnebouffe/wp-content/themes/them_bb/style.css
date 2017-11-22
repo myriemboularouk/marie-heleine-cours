@@ -1,0 +1,70 @@
+/*WORDPRESS DEV 
+---------------
+
+
+objectif: etre capable de crèè un thème wordpress pour repondre a la demande d'un client qui souhaite un design particulier . cette demarche permet de comprendre le conctionnement de wordpress et ainsi de modifier des thème en profondeur .
+
+
+
+----------------------------------------
+1/ creation de theme et des templates : 
+----------------------------------------
+
+-Dans wp-content/themes/theme_bb : création du thème 
+-theme_bb/style.css
+-theme-bb/assets : toutesles images, les JS, et CSS additionnel du theme. 
+-theme-bb/screenshot.png : image reprèsentative du theme (dans l'admin)
+
+
+-style.css : Dèclaration de notre theme.
+-index.php : creation du template de base (vide pour le moment)
+
+a ce stade notre theme est reconnu dans l'admin de wp!
+
+
+-header.php : partie haute de nos page(templates)
+-footer.php : partie basse de nos page(templates)
+
+
+header.php : 
+
+-bloginfo('name'): bloginfo() nous affiche les information génerales de notre site .on prècise en argument l'info à afficher . ici name signifie le titre (nome) di site.
+-bloginfo('description'): la desciption/ le slogan di site
+-bloginfo('charset'):le charset du  site 
+-bloginfi('termplate_directory') : chemin absolue du site(depuis le repertoire web )
+-wp_title() : affiche le titre de la page. 3 arguments : 1/ separateur 
+2/ true ou false (optionnal) 3/ position du titre par rapport au separateur (optionnel)
+-wp_head() : permet d'inclure les élément inportent à wp (barre admin ...). Emplacement essentiel , juste avant le >/head>
+- body_class() : permet 
+
+=======> codex: http://codex.wordpress.org/WPMU_function/get_bloginfo
+
+ * Contenu :
+   -index.php : home par default, liste tous les articles.
+   -category.php : la structure de la page qui affiche une categorie.
+   -front-page.php : la structure de la page d'accueil . 
+   -single.php : la structure de base qui affiche le contenu d'un article;
+   -page.php : la structure de base qui affiche le contenu d'une page.
+
+ WP fait la distinction en fonction des nom de fichier, et distribue le contenu.
+
+ Explication du code dans ces page :
+   la boucle if(have_post) /while (have_post) permet d'afficher le contenu d'une page PEU IMPORTE 
+   de quel contenu il s'agit, et PEU IMPORTE s'il y un ou plusieurs contenu(s).WP determine le contenu à 
+   afficher grace au nom du fichier.
+
+   have_posts() : Retourne un boolean qui indique à la boucle s'il y a encore du contenu à afficher.
+
+   the_post() : A l'interieur de la boucle while, la fonction permet de recuperer chaque contenu.
+
+   the_permalink() : affiche le lien d'un article.
+   the_title() : affiche le titre d'un article.
+   the_content() : affiche le contenu d'un article.
+
+   get_header() : fait un require/include de header.php
+   get_footer() : fait un require/include de footer.php
+
+   /!\ Ce code constitue la base 
+
+
+*/

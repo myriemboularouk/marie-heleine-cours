@@ -1,0 +1,149 @@
+/*---header---*/
+header{
+    position:relative;
+    background-image: url('../img/planks0096.jpg');
+}
+nav{
+    top: 40px;
+    position: absolute;
+    right: 25px;
+}
+/*relative=statique c est pour les nav pour q il se  positionne relativement l exemple de darty sold d ete et il herite pas les elements de body mais de header(le parant ne bouge pas contrairement les enfants bougent) */
+    nav a{
+        margin: 30px;
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;/*les mettre un peut en gras*/
+        font-family: 'Caveat Brush', cursive;/*lien de google fonts*/
+    }
+    .logoResto{
+        position: relative;
+        display: inline-block;
+        margin-left: 80px;
+    }/*c sa qui fait k la nav est a droite*/
+    h1{
+        font-family: 'Caveat Brush', cursive;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+         h1 span{
+             font-size: 40px;
+             display: inline;
+             vertical-align: top;
+             position: relative;
+         }
+            h1 span:after{
+                /*apres:rajoute tout de suit apres l element*/
+                top: 15px;
+                content: "-";
+                position: absolute;
+                left:0;
+                }
+        #logo{
+            width: 300px;
+            margin: auto;/*margin:0auto pour centrer l image */
+            position: relative;
+            margin-top: 250px;
+            padding-bottom: 250px;
+        }
+            #logo div{
+                width: 0;
+                height: 0;
+                border-top: 250px solid #e53f6f;
+                border-left: 250px solid transparent;
+            }
+            #logo img{
+                top: -27px;
+                position: absolute;
+                width: 100%;/*c est le parent qui bouge(cerf)absolute et l enfant statique*/
+            }
+    .inlineB{
+        display: inline-block;
+    }
+    /*les traits roses*/
+.rectRose{
+    position: absolute;
+    bottom: 12px;
+    margin: 0;
+    display: block;
+    border: 7px solid #e53f6f;
+    padding: 0 17px;
+    width: 0;
+    left: 26%;
+}
+/*fleche*/
+i{
+    margin-top: 5vw;
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+}
+   i#fleche{
+       top: 4vw;
+       left: -7vw;
+       width: 3.4em;
+       height: 3.4em;
+       border-right: 0.3em solid #d4276d;
+       border-top: 0.3em solid #d4276d;/*la on a fait que le carre (le html travail en system de boite)*/
+       transform: rotate(134deg);
+   }
+   /*--fin Header--*/
+   /*---section---*/
+   h2{
+       text-transform: uppercase;/*majuscule*/
+       font-size: 40px;
+       font-family: sans-serif;
+   }
+   #story h2{
+       font-size: 55px;
+   }
+   section .rectRose{
+       position: inherit;
+       margin: auto;
+       left: 0;
+       bottom: 15px;
+   }
+   section img{
+       width: 100%
+   }
+
+
+
+
+
+   /*----FINsection---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----fin header----*/

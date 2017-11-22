@@ -1,0 +1,14 @@
+* Wordpress DEV *
+-----------
+  Objectif: 
+-----------
+etre capable de creer un theme Wordpress pour repondre a la demande d'un client qui souhaite un design particulier.Cette demarche permet de comprendre le fonctionnement de wordpress et ainsi modifier des themes en profendeur.
+
+----------------------------------------
+1/ CREATION DU THEME ET DES TEMPLATES :
+----------------------------------------
+ 
+  -Dans wp_content/thems/them_bb : Creation du theme.
+  -Theme_bb/style.css
+  - Them_bb/assets : touts les images, les JS, et CSS, additionnelle
+  -Theme_bb/screenshot.png : Image representative du theme (dans l'Admin).
